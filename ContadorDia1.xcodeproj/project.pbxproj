@@ -17,6 +17,7 @@
 		42946F55270F5A08006C3378 /* ContadorDia1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42946F54270F5A08006C3378 /* ContadorDia1UITests.swift */; };
 		42946F57270F5A08006C3378 /* ContadorDia1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42946F56270F5A08006C3378 /* ContadorDia1UITestsLaunchTests.swift */; };
 		42BC9200270FDCAC006860A8 /* Tarefas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC91FF270FDCAC006860A8 /* Tarefas.swift */; };
+		42BC92042710759A006860A8 /* Unidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC92032710759A006860A8 /* Unidade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		42946F54270F5A08006C3378 /* ContadorDia1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorDia1UITests.swift; sourceTree = "<group>"; };
 		42946F56270F5A08006C3378 /* ContadorDia1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorDia1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42BC91FF270FDCAC006860A8 /* Tarefas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarefas.swift; sourceTree = "<group>"; };
+		42BC92032710759A006860A8 /* Unidade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unidade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				42946F3E270F5A07006C3378 /* LaunchScreen.storyboard */,
 				42946F41270F5A07006C3378 /* Info.plist */,
 				42BC91FF270FDCAC006860A8 /* Tarefas.swift */,
+				42BC92032710759A006860A8 /* Unidade.swift */,
 			);
 			path = ContadorDia1;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				42946F34270F59F6006C3378 /* AppDelegate.swift in Sources */,
 				42BC9200270FDCAC006860A8 /* Tarefas.swift in Sources */,
 				42946F36270F59F6006C3378 /* SceneDelegate.swift in Sources */,
+				42BC92042710759A006860A8 /* Unidade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

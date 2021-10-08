@@ -35,5 +35,6 @@ import Foundation
         - pegar data de agora
         - apresentar na interface quando foi a última vez que bebemos agua
  
+    * Abaixar o teclado quando o usuário já digitou
  
  */

@@ -34,6 +34,12 @@ class ViewController: UIViewController {
     //MARK: - Variáveis
     
     var contadorCoposDagua: Int = 0
+    
+    var faltaParaMeta: Int {
+        return 20 - contadorCoposDagua
+    }
+    
+    let unidadeExposta: Unidade = .litro
  
     // MARK: - Ciclo de Vida (Life Cycle)
     override func viewDidLoad() {
@@ -47,18 +53,17 @@ class ViewController: UIViewController {
         atualizaLabel()
         
         entradaDeTextoUsuario.addTarget(self, action: #selector(atualizaMeta), for: .editingChanged)
-
+        
     }
 
     // MARK: - Metodos
     func atualizaLabel() {
-        labelQtdAgua.text = "Copos hoje: " + String(contadorCoposDagua)
+        let mensagem: String = unidadeExposta.formaMensagem(copos: contadorCoposDagua)
+        
+        labelQtdAgua.text = mensagem
     }
     
     @objc func atualizaMeta() {
-        // ??
-        // if let
-        // guard let
         guard let textoDoUsuario = entradaDeTextoUsuario.text else {
             return
         }
@@ -72,13 +77,11 @@ class ViewController: UIViewController {
         atualizaLabel()
     }
     
-    @IBAction func diminuiContador(_ sender: UIButton) {
-        
-        if (contadorCoposDagua > 0) {
-            contadorCoposDagua -= 1
-            atualizaLabel()
-        }
+    @IBAction func diminuiContador(_ sender: Any) {
+        contadorCoposDagua -= 1
+        atualizaLabel()
     }
+    
 }
 
 
