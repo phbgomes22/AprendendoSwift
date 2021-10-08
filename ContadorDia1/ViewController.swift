@@ -35,11 +35,23 @@ class ViewController: UIViewController {
     
     var contadorCoposDagua: Int = 0
     
-    var faltaParaMeta: Int {
-        return 20 - contadorCoposDagua
+    var metaCoposDagua: Int {
+        let textoDoUsuario: String = entradaDeTextoUsuario.text ?? "20"
+        let metaEmInteiro = Int(textoDoUsuario) ?? 20
+        return metaEmInteiro
     }
     
-    let unidadeExposta: Unidade = .litro
+    var metaEstaCumprida: Bool = false {
+        didSet {
+            if metaEstaCumprida {
+                view.backgroundColor = UIColor.green
+            } else { 
+                view.backgroundColor = Cores.azulClaro.uiColor
+            }
+        }
+    }
+    
+    let unidadeExposta: Unidade = .copo
  
     // MARK: - Ciclo de Vida (Life Cycle)
     override func viewDidLoad() {
@@ -74,11 +86,17 @@ class ViewController: UIViewController {
     
     @IBAction func incrementaContador(_ sender: UIButton) {
         contadorCoposDagua += 1
+        
+        metaEstaCumprida = (contadorCoposDagua >= metaCoposDagua)
+        
         atualizaLabel()
     }
     
     @IBAction func diminuiContador(_ sender: Any) {
         contadorCoposDagua -= 1
+        
+        metaEstaCumprida = (contadorCoposDagua >= metaCoposDagua)
+        
         atualizaLabel()
     }
     

@@ -18,6 +18,7 @@
 		42946F57270F5A08006C3378 /* ContadorDia1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42946F56270F5A08006C3378 /* ContadorDia1UITestsLaunchTests.swift */; };
 		42BC9200270FDCAC006860A8 /* Tarefas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC91FF270FDCAC006860A8 /* Tarefas.swift */; };
 		42BC92042710759A006860A8 /* Unidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC92032710759A006860A8 /* Unidade.swift */; };
+		42BC920627109803006860A8 /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC920527109803006860A8 /* Cores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		42946F56270F5A08006C3378 /* ContadorDia1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorDia1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42BC91FF270FDCAC006860A8 /* Tarefas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarefas.swift; sourceTree = "<group>"; };
 		42BC92032710759A006860A8 /* Unidade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unidade.swift; sourceTree = "<group>"; };
+		42BC920527109803006860A8 /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				42946F41270F5A07006C3378 /* Info.plist */,
 				42BC91FF270FDCAC006860A8 /* Tarefas.swift */,
 				42BC92032710759A006860A8 /* Unidade.swift */,
+				42BC920527109803006860A8 /* Cores.swift */,
 			);
 			path = ContadorDia1;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				42946F38270F59F6006C3378 /* ViewController.swift in Sources */,
 				42946F34270F59F6006C3378 /* AppDelegate.swift in Sources */,
+				42BC920627109803006860A8 /* Cores.swift in Sources */,
 				42BC9200270FDCAC006860A8 /* Tarefas.swift in Sources */,
 				42946F36270F59F6006C3378 /* SceneDelegate.swift in Sources */,
 				42BC92042710759A006860A8 /* Unidade.swift in Sources */,

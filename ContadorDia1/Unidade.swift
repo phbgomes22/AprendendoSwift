@@ -14,7 +14,7 @@ enum Unidade {
     case litro
     
     // variáveis computadas
-    var sigla: String {
+    private var sigla: String {
         switch self {
         case .litro:
             return " L"
@@ -31,12 +31,15 @@ enum Unidade {
             let litros = Float(copos)*0.2
             return "Litros hoje: " + String(format: "%.1f", litros) + self.sigla
         case .ml:
-            return "Mls hoje: " + String(copos*200) + self.sigla
+            return "Mls hoje: " + copoParaMl(copos: copos) + self.sigla
         case .copo:
             return "Copos hoje: " + String(copos) + self.sigla
         }
     }
     
+    private func copoParaMl(copos: Int) -> String {
+        return String(copos*200)
+    }
 }
 
 
